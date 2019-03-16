@@ -9,6 +9,8 @@ namespace PrototypeApp.API.Data
 
         //table name in DB will be *Values* that can inherit the fields from *Value* Class
         public DbSet<Value> Values { get; set; }  
+
+        public DbSet<User> Users { get; set; }
         
     }
 }
