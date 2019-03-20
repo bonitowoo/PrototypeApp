@@ -8,7 +8,7 @@ namespace PrototypeApp.API.Dtos
         public string Username { get; set; }
 
         [Required]
-        [StringLength(16, MinimumLength = 8, ErrorMessage = "You must specify password between 8 and 16 characters")]
+        [StringLength(12, MinimumLength = 6, ErrorMessage = "You must specify password between 6 and 12 characters")]
         public string Password { get; set; }
     }
 }
