@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PrototypeApp.API.Data;
 using PrototypeApp.API.Dtos;
+using PrototypeApp.API.Helpers;
 
 namespace PrototypeApp.API.Controllers
 {
+    [ServiceFilter(typeof(LogUserActivity))]
     [Authorize]
     [Route("api/[controller]")]
     [ApiController]
